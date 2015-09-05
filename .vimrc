@@ -16,6 +16,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'HTML-AutoCloseTag'
 
 " End vundle config
 call vundle#end()
