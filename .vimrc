@@ -23,9 +23,13 @@ call vundle#end()
 filetype plugin indent on
 
 " Personal settings
-filetype indent on
-set sw=4 ts=4
+filetype indent on " Set automatic indentation on 
+set sw=4 ts=4 " Shrink tab length 
+
+" Map ctrl-<direction> to switch buffers in that direction
 nnoremap <C-H> <C-W>h
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
+
+autocmd BufRead,BufNewFile *.asm set filetype=nasm " Make vim read .asm files as the .nasm filetype
