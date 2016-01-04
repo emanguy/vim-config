@@ -17,7 +17,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'HTML-AutoCloseTag'
-Plugin 'tfnico/vim-gradle'
+Plugin 'TaskList.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " End vundle config
 call vundle#end()
@@ -37,3 +38,6 @@ nnoremap <C-L> <C-W>l
 autocmd BufRead,BufNewFile *.asm set filetype=nasm 
 
 let g:syntastic_java_javac_config_file_enabled = 1
+
+let g:tlTokenList=['TODO', 'FIX', 'NOTE']
+let g:tlWindowPosition=1
