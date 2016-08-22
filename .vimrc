@@ -1,3 +1,6 @@
+"Set color range
+set t_Co=256
+
 " BEGIN Vundle
 set nocompatible
 filetype off
@@ -20,6 +23,9 @@ Plugin 'HTML-AutoCloseTag'
 Plugin 'TaskList.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'mhinz/vim-signify'
 
 " End vundle config
 call vundle#end()
@@ -38,7 +44,22 @@ nnoremap <C-L> <C-W>l
 " Make vim read .asm files as the .nasm filetype
 autocmd BufRead,BufNewFile *.asm set filetype=nasm 
 
+"Syntastic options
 let g:syntastic_java_javac_config_file_enabled = 1
 
-let g:tlTokenList=['TODO', 'FIX', 'NOTE']
-let g:tlWindowPosition=1
+"Airline options
+let g:airline_powerline_fonts = 1
+set laststatus=2
+
+"Tasklist.vim options
+let g:tlTokenList = ['TODO', 'FIX', 'NOTE']
+let g:tlWindowPosition = 1
+
+"Gitgutter/signify options
+let g:signify_vcs_list = ['hg']
+set updatetime=250
+
+"Make search smart-case-sensitive
+set ignorecase
+set smartcase
+
