@@ -3,11 +3,11 @@ set nocompatible
 filetype off
 
 " Add vundle to runtime path and start it
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
 
 " Let vundle manage itself
-Plugin 'gmarik/Vundle.vim'
+Plugin 'vundlevim/vundle.vim'
 
 " My plugins
 Plugin 'scrooloose/syntastic'
@@ -19,6 +19,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'HTML-AutoCloseTag'
 Plugin 'TaskList.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-airline/vim-airline'
 
 " End vundle config
 call vundle#end()
