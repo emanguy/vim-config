@@ -1,5 +1,6 @@
 "Set color range
 set t_Co=256
+set encoding=utf8
 
 " BEGIN Vundle
 set nocompatible
@@ -26,6 +27,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mhinz/vim-signify'
+Plugin 'ryanoasis/vim-devicons'
 
 " End vundle config
 call vundle#end()
