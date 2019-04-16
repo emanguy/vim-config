@@ -61,7 +61,12 @@ let g:tlWindowPosition = 1
 let g:signify_vcs_list = ['hg']
 set updatetime=250
 
+"NERDTree options
+let g:NERDTreeNodeDelimiter = "\u00a0"
+
 "Make search smart-case-sensitive
 set ignorecase
 set smartcase
 
+"Enable syntax
+syn on
