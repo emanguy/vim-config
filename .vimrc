@@ -14,20 +14,25 @@ call vundle#begin()
 Plugin 'vundlevim/vundle.vim'
 
 " My plugins
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-fugitive'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'HTML-AutoCloseTag'
-Plugin 'TaskList.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'mhinz/vim-signify'
-Plugin 'ryanoasis/vim-devicons'
+Plugin 'ryanoasis/vim-devicons'         " Filetype icons for CTRL-P and NERDTree
+Plugin 'scrooloose/syntastic'           " Syntax highlighting
+Plugin 'scrooloose/nerdtree'            " File tree
+Plugin 'scrooloose/nerdcommenter'       " Comment toggle 
+Plugin 'tpope/vim-surround'             " Motions for changing surrounding quotes
+Plugin 'tpope/vim-fugitive'             " Git integration commands
+Plugin 'jiangmiao/auto-pairs'           " Automatically add endquotes
+Plugin 'HTML-AutoCloseTag'              " Automatically close HTML tags
+Plugin 'TaskList.vim'                   " List TODOs in code
+Plugin 'ctrlpvim/ctrlp.vim'             " Fuzzy file search
+Plugin 'vim-airline/vim-airline'        " Vim statusbar powerlineification
+Plugin 'vim-airline/vim-airline-themes' " Themes for fancy status bar
+Plugin 'airblade/vim-gitgutter'         " Line-by-line git changes in left gutter
+Plugin 'mhinz/vim-signify'              " Line-by-line changes for other VCS
+Plugin 'dhruvasagar/vim-table-mode'     " Pretty markdown tables
+Plugin 'easymotion/vim-easymotion'      " Quick visual jumps to different parts of the document
+Plugin 'vim-scripts/ZoomWin'            " Support for restoring windows after doing a CTRL-Wo
+Plugin 'SidOfc/mkdx'                    " Advanced markdown actions
+Plugin 'chr4/nginx.vim'                 " Nginx configuration file highlighting
 
 " End vundle config
 call vundle#end()
@@ -51,6 +56,7 @@ let g:syntastic_java_javac_config_file_enabled = 1
 
 "Airline options
 let g:airline_powerline_fonts = 1
+let g:webdevicons_enable_airline_statusline = 1
 set laststatus=2
 
 "Tasklist.vim options
@@ -63,6 +69,9 @@ set updatetime=250
 
 "NERDTree options
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+"Table mode settings
+let g:table_mode_corner="|"
 
 "Make search smart-case-sensitive
 set ignorecase
