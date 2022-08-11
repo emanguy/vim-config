@@ -28,6 +28,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mhinz/vim-signify'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'SidOfc/mkdx'
+Plugin 'wellle/context.vim'
 
 " End vundle config
 call vundle#end()
@@ -36,6 +38,7 @@ filetype plugin indent on
 " Personal settings
 filetype indent on " Set automatic indentation on 
 set sw=4 ts=4 " Shrink tab length 
+syn on
 
 " Map ctrl-<direction> to switch buffers in that direction
 nnoremap <C-H> <C-W>h
